@@ -14,15 +14,15 @@ For this  project we will be analyzing some 911 call data from [Kaggle](https://
 
 # Exploratory Data Analysis (EDA)
 
-* calculating the top 5 zipcodes
-* calculating the top 5 townships
-* unique title codes
+* Calculating the top 5 zipcodes
+* Calculating the top 5 townships
+* Unique title codes
 
 # Creating new features
 
-* using lambda and split to extraxt the reasons for calls.
+* Using lambda and split to extraxt the reasons for calls.
 
-* countplot of 911 calls by Reason
+* Countplot of 911 calls by Reason
  
 
 ![countplot](https://user-images.githubusercontent.com/121250443/210860135-8c5aee16-61ba-4c3e-97ae-869464570ed6.png)
@@ -33,18 +33,18 @@ df['Day of Week'] = df['timeStamp'].apply(lambda time: time.dayofweek)
 dmap = {0:'Mon',1:'Tue',2:'Wed',3:'Thu',4:'Fri',5:'Sat',6:'Sun'}
 df['Day of Week']=df['Day of Week'].map(dmap)
 
-* fill in some month missing information by plotting the information and groupby
+* Fill in some month missing information by plotting the information and groupby
 
 ![filling](https://user-images.githubusercontent.com/121250443/210861491-c8a9a262-26f9-42e2-b79e-b175fcb46690.png)
 
-* creating heatmaps with seaborn and our data. We'll first need to restructure the dataframe so that the columns become the Hours and the Index becomes the Day of the Week
+* Creating heatmaps with seaborn and our data. We'll first need to restructure the dataframe so that the columns become the Hours and the Index becomes the Day of the Week
 
 ![heatmap](https://user-images.githubusercontent.com/121250443/210861789-45263402-8052-45ba-b95c-1ed3918dafdd.png)
 
 
 # Scatter plots on maps
 
-* plot out the location of calls for fire Reason using lng and lat data
+* Plot out the location of calls for fire Reason using lng and lat data
 
 
 ![newplot (3)](https://user-images.githubusercontent.com/121250443/210862520-5a91066b-23d0-4d8d-ab98-01daca4a17ae.png)
